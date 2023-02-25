@@ -1,8 +1,5 @@
 const express = require("express");
 const app = express();
-const bcrypt = require("bcryptjs")
-const validator = require("validator");
-const md5 = require('md5');
 const cors = require("cors");
 app.use(express.json());
 app.use(cors());

@@ -1,7 +1,7 @@
 const validator = require("validator");
 
 module.exports = mongoose => {
-    var User = mongoose.Schema({
+    var Admin = mongoose.Schema({
         name: String,
         email : {
             type:String,
@@ -27,6 +27,6 @@ module.exports = mongoose => {
         // address : String,
         // phoneNumber: String
     });
-    const user = mongoose.model("Admin", User);
+    const user = mongoose.model("Admin", Admin);
     return user;
 }
